@@ -1,4 +1,3 @@
-use ./welcome_matt.nu *
 
 export def cl [] {
     
