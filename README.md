@@ -21,10 +21,10 @@ repo
 `./doc` contains all the necessary documentation to understand my code
 
 `./dotfiles` contains all the configurations. Each folder will individually be
-symlinked to `~/.config/<package-name>/`
+copied to `~/.config/<package-name>/`
 
 `./scripts` contains all the scripts I use daily, and the scripts used to
-automate my arch instance. The installation scripts won't be symlinked,
+automate my arch instance. The installation scripts won't be copied,
 however, the other scripts will be to `~/scripts/`
 
 ## Automation
