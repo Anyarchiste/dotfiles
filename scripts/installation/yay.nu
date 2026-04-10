@@ -1,5 +1,7 @@
 #! /usr/bin/env nu
 
+print $"(ansi blue) Installing yay"
+
 let tmp_exists = true
 
 print "moving to /tmp/"
