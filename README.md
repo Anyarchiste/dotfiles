@@ -11,10 +11,12 @@ as well as possible my home setup.
 repo
   |- doc
   |- dotfiles
-  |- scripts
   |- fresh_install.sh
   |- README.md
   |- CREDITS.md
+  |- scripts
+        |- daily
+        |- installation
 
 ```
 
@@ -26,6 +28,9 @@ copied to `~/.config/<package-name>/`
 `./scripts` contains all the scripts I use daily, and the scripts used to
 automate my arch instance. The installation scripts won't be copied,
 however, the other scripts will be to `~/scripts/`
+
+Nushell modules are not considered scripts per say and are located under
+`./dotfiles/nushelle/modules`
 
 ## Automation
 
@@ -44,6 +49,13 @@ however, the other scripts will be to `~/scripts/`
 Just after login, you can clone this repository and run `./fresh_install.sh`.
 This will install everything the same way I have it and will try to reproduce
 as best as possible my setup.
+
+The entire automation of this repository is compatible with Arch Linux. I most
+certainly won't port it, unless I end up back in NisOS, but then it would be
+another repo.
+
+On another distro you can manually copy the dotfiles you desire, remember to
+install the programms too.
 
 ## Disclaimer
 

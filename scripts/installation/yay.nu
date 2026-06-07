@@ -3,14 +3,17 @@
 print $"(ansi blue) Installing yay"
 
 let tmp_exists = true
+let delete_yay_folder = false
 
 print "moving to /tmp/"
 
 try { cd /tmp/} catch { $tmp_exists = false }
 
-if not $exit_code {
+if not $tmp_exists {
 	
-	print "/tmp/ doesn't exist, using /home/$env.USER and deleting afterwards" 
+	print "/tmp/ doesn't exist, using /home/$env.USER and deleting afterwards"
+
+    $delete_yay_folder = true
 		
 	cd /home/$env.USER
 
